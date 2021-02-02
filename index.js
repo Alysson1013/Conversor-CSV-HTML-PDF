@@ -8,7 +8,8 @@ async function main(){
     let data = await reader.read("./Mock.csv")
     data = Processor.Process(data)
     let usuarios = new Table(data)
-    console.log(usuarios)
+    console.log(usuarios.CountRows)
+    console.log(usuarios.CountColumns)
 }
 
 main()
